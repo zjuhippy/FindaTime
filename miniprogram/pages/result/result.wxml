@@ -45,7 +45,7 @@
           wx:key="id"
           wx:for-item="slot"
         >
-          <text wx:if="{{participant.selectedSlots.indexOf(slot.id) >= 0}}">可以</text>
+          <text wx:if="{{participant.selectedSlots.includes(slot.id) >= 0}}">可以</text>
         </view>
       </view>
     </view>
